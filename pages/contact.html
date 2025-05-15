@@ -63,43 +63,80 @@
             <h2>Send Us a Message</h2>
             <form id="contact-form">
                 <div class="form-group">
-                    <label for="name">Your Name</label>
+                    <label for="name">Your Full Name</label>
                     <input type="text" id="name" name="name" required>
                 </div>
-                
                 <div class="form-group">
-                    <label for="email">Your Email</label>
+                    <label for="name">Fiancé/Bride/Groom's Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Primary Email</label>
                     <input type="email" id="email" name="email" required>
                 </div>
                 
                 <div class="form-group">
-                    <label for="phone">Phone Number</label>
+                    <label for="phone">Primary Phone Number</label>
                     <input type="tel" id="phone" name="phone">
                 </div>
                 
-                <div class="form-group">
-                    <label for="event-date">Event Date (if known)</label>
+                 <div class="form-group">
+                    <label for="address">Home Address</label>
                     <input type="date" id="event-date" name="event-date">
                 </div>
                 
                 <div class="form-group">
-                    <label for="service">Service Interested In</label>
+                    <label for="event-date">Event Date </label>
+                    <input type="date" id="event-date" name="event-date">
+                </div>
+                
+                <div class="form-group">
+                    <label for="service">Event Type</label>
                     <select id="service" name="service">
                         <option value="">Select a Service</option>
                         <option value="full-planning">Full Wedding Planning</option>
                         <option value="partial-planning">Partial Planning</option>
-                        <option value="month-of">Month-of Coordination</option>
+                        <option value="month-of">Month-of Planning</option>
                         <option value="destination">Destination Wedding</option>
-                        <option value="cultural">Cultural Wedding</option>
-                        <option value="other">Other</option>
+                        <option value="destination">Day of Coordination</option>
+                        <option value="cultural">Behind the Scenes</option>
+                        <option value="other">Other Event</option>
                     </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="Budget">Budget</label>
+                    select id="budget" name="budget">
+                        <option value="">Cost</option>
+                        <option value="cost-range">2,000 - 5,000</option>
+                        <option value="cost-range">5,000 - 10,000 </option>
+                        <option value="cost-range">10,000 - 50,000</option>
+                        <option value="cost-range">50,000 - 100,000</option>
+                        <option value="cost-range">100,000 - 200,000</option>
+                        <option value="cost-range">200,000 and up</option>
+                        <option value="cost-range">I am not sure</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="guests">Number of Guest</label>
+                    <textarea id="message" name="message" required></textarea>
                 </div>
                 
                 <div class="form-group">
                     <label for="message">Your Message</label>
                     <textarea id="message" name="message" required></textarea>
                 </div>
-                
+
+                <div class="form-group">
+                    <label for="hear">How did you hear about us?</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Tell us about what makes you happy, your incredible love story and how we can help you plan your once in a lifetime celebration</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
                 <button type="submit" class="submit-btn">Send Message</button>
             </form>
         </div>
