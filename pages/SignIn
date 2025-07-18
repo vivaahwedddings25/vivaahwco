@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Vivaah Weddings</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <Sign In>
+    </header>
+    <main style="display:flex;justify-content:center;align-items:center;height:80vh;">
+        <form id="login-form" style="background:#fff;padding:2rem 2.5rem;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.08);min-width:320px;">
+            <h2 style="text-align:center;margin-bottom:1.5rem;">Sign In</h2>
+            <div style="margin-bottom:1rem;">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required style="width:100%;padding:8px;margin-top:4px;">
+            </div>
+            <div style="margin-bottom:1.5rem;">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required style="width:100%;padding:8px;margin-top:4px;">
+            </div>
+            <button type="submit" style="width:100%;background:#b48a78;color:#fff;padding:10px 0;border:none;border-radius:6px;font-size:16px;">Login</button>
+            <div id="login-error" style="color:red;text-align:center;margin-top:1rem;display:none;">Invalid username or password.</div>
+        </form>
+    </main>
+    <script>
+    // Simple demo: hardcoded username/password
+    const DEMO_USER = "bride";
+    const DEMO_PASS = "wedding2024";
+
+    document.getElementById('login-form').onsubmit = function(e) {
+        e.preventDefault();
+        const user = document.getElementById('username').value;
+        const pass = document.getElementById('password').value;
+        if (user === DEMO_USER && pass === DEMO_PASS) {
+            // Redirect to portal page
+            window.location.href = "portal.html";
+        } else {
+            document.getElementById('login-error').style.display = "block";
+        }
+    };
+    </script>
+</body>
+</html>
